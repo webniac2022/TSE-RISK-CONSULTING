@@ -1,11 +1,5 @@
-import {
-  useEffect,
-  useMemo,
-  createContext,
-  useContext,
-  useState,
-} from '../components/ThirdPartyLibrariesComponents/third-party';
-import { useRouter } from '../components/NextComponents/next-components';
+import { useEffect, useMemo, createContext, useContext, useState } from 'react';
+import { useRouter } from 'next/router';
 
 const AppContext = createContext();
 

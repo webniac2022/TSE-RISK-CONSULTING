@@ -1,12 +1,10 @@
-import {
-  IconButton,
-  Container,
-  SwipeableDrawer,
-  StyledButton,
-  Grid,
-  Typography,
-} from '../MuiComponents/mui-components';
-import { useState } from '../ThirdPartyLibrariesComponents/third-party';
+import { StyledButton } from '../StyledComponents/styled-components';
+import IconButton from '@mui/material/IconButton';
+import Container from '@mui/material/Container';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import { useState } from 'react';
 import Menu from '@mui/icons-material/Menu';
 import { useAppContext } from '../../context/context';
 import Link from '../Link/link';

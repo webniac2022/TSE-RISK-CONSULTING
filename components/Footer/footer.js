@@ -1,5 +1,6 @@
-import { AppBar, Grid } from '../MuiComponents/mui-components';
-import { Fragment } from '../ThirdPartyLibrariesComponents/third-party';
+import AppBar from '@mui/material/AppBar';
+import Grid from '@mui/material/Grid';
+import { Fragment } from 'react';
 import bgFooter from '../../public/images/bgFooter.svg';
 import ContactInfo from '../ContactInfo/contact-info';
 import FooterInfo from '../FooterInfo/footer-info';

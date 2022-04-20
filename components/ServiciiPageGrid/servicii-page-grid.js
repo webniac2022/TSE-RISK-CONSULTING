@@ -1,5 +1,7 @@
-import { Grid, Typography, Box } from '../MuiComponents/mui-components';
-import { Image } from '../NextComponents/next-components';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Image from 'next/image';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;

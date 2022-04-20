@@ -1,8 +1,5 @@
-import {
-  motion,
-  AnimatePresence,
-} from '../ThirdPartyLibrariesComponents/third-party';
-import { useRouter } from '../NextComponents/next-components';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 function PageTransition({ children }) {
   const router = useRouter();

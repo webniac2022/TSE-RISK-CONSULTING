@@ -1,14 +1,11 @@
-import {
-  StyledSpan,
-  Grid,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from '../components/MuiComponents/mui-components';
-import { Head } from '../components/NextComponents/next-components';
-import { contentful } from '../components/ThirdPartyLibrariesComponents/third-party';
-
+import { StyledSpan } from '../components/StyledComponents/styled-components';
+import Head from 'next/head';
+import * as contentful from 'contentful';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import MyCard from '../components/Card/card';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 function ServiciiPage({ servicii: { items } }) {
   const theme = useTheme();

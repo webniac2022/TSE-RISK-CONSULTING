@@ -1,10 +1,8 @@
-import {
-  StyledButton,
-  Grid,
-  Alert,
-  AlertTitle,
-} from '../components/MuiComponents/mui-components';
+import { StyledButton } from '../components/StyledComponents/styled-components';
 import Link from '../components/Link/link';
+import Grid from '@mui/material/Grid';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
 
 const SuccessFormPage = () => {
   return (

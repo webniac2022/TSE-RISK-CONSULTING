@@ -1,13 +1,10 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import {
-  StyledButton,
-  Typography,
-  Grid,
-} from '../MuiComponents/mui-components';
-import { useRouter } from '../NextComponents/next-components';
-
+import { StyledButton } from '../StyledComponents/styled-components';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import { useRouter } from 'next/router';
 import Link from '../Link/link';
 
 const ContactInfo = ({ isDisplayed }) => {

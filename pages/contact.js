@@ -2,21 +2,20 @@ import map from '../public/images/screenshot.png';
 import classes from '../styles/contact.module.css';
 import {
   StyledSpan,
-  Grid,
-  Box,
-  Typography,
-  FormControl,
   StyledButton,
-  Input,
-  InputLabel,
-} from '../components/MuiComponents/mui-components';
-import { Image, Head } from '../components/NextComponents/next-components';
-import {
-  contentful,
-  useState,
-} from '../components/ThirdPartyLibrariesComponents/third-party';
+} from '../components/StyledComponents/styled-components';
+import Image from 'next/image';
+import Head from 'next/head';
+import * as contentful from 'contentful';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
+import Box from '@mui/material/Box';
 import ContactThanksAnimation from '../components/ContactThanks/contact-thanks';
 import ContactInfo from '../components/ContactInfo/contact-info';
+import { useState } from 'react';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;

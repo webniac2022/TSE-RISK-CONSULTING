@@ -1,8 +1,10 @@
 import * as React from 'react';
-import { useRouter, NextLink } from '../NextComponents/next-components';
-import { MuiLink, styled } from '../MuiComponents/mui-components';
-import { PropTypes, clsx } from '../ThirdPartyLibrariesComponents/third-party';
-
+import { useRouter } from 'next/router';
+import MuiLink from '@mui/material/Link';
+import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
+import NextLink from 'next/link';
 // Add support for the sx prop for consistency with the other branches.
 const Anchor = styled('a')({});
 

@@ -1,5 +1,6 @@
-import { Typography, Grid } from '../MuiComponents/mui-components';
-import { CookieConsent } from '../ThirdPartyLibrariesComponents/third-party';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import CookieConsent from 'react-cookie-consent';
 
 function CookieModal() {
   return (

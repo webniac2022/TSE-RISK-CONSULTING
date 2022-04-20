@@ -1,8 +1,6 @@
-import {
-  Grid,
-  Typography,
-  StyledButton,
-} from '../MuiComponents/mui-components';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import { StyledButton } from '../StyledComponents/styled-components';
 import { useAppContext } from '../../context/context';
 import Link from '../Link/link';
 

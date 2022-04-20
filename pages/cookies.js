@@ -1,19 +1,15 @@
-import {
-  StyledSpan,
-  Grid,
-  Typography,
-  styled,
-} from '../components/MuiComponents/mui-components';
-import { Head, Image } from '../components/NextComponents/next-components';
-import {
-  contentful,
-  BLOCKS,
-  documentToReactComponents,
-} from '../components/ThirdPartyLibrariesComponents/third-party';
-
+import { StyledSpan } from '../components/StyledComponents/styled-components';
+import Image from 'next/image';
+import Head from 'next/head';
+import * as contentful from 'contentful';
+import { BLOCKS } from '@contentful/rich-text-types';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 const myLoader = ({ src }) => {
   return `https:${src}`;
 };
+import { styled } from '@mui/material/styles';
 
 const StyledParagraph = styled('p')({});
 

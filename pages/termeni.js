@@ -1,15 +1,12 @@
-import {
-  StyledSpan,
-  Grid,
-  styled,
-  Typography,
-} from '../components/MuiComponents/mui-components';
-import { Image, Head } from '../components/NextComponents/next-components';
-import {
-  contentful,
-  BLOCKS,
-  documentToReactComponents,
-} from '../components/ThirdPartyLibrariesComponents/third-party';
+import { StyledSpan } from '../components/StyledComponents/styled-components';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Image from 'next/image';
+import Head from 'next/head';
+import * as contentful from 'contentful';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS } from '@contentful/rich-text-types';
+import { styled } from '@mui/material/styles';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;

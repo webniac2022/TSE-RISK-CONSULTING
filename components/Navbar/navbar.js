@@ -1,11 +1,9 @@
-import {
-  StyledButton,
-  Typography,
-  Grid,
-} from '../MuiComponents/mui-components';
+import { StyledButton } from '../StyledComponents/styled-components';
 import { useAppContext } from '../../context/context';
 import Link from '../Link/link';
 import Underline from '../UnderlineAnimation/underline';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
 const Navbar = ({ navLinks }) => {
   const { toggleTabIndex, tabIndexx } = useAppContext();

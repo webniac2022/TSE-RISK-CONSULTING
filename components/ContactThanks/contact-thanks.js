@@ -1,6 +1,6 @@
 import { useAppContext } from '../../context/context';
-import { motion } from '../ThirdPartyLibrariesComponents/third-party';
-import { useTheme } from '../MuiComponents/mui-components';
+import { motion } from 'framer-motion';
+import { useTheme } from '@mui/material/styles';
 
 function ContactThanksAnimation() {
   const { mode } = useAppContext();

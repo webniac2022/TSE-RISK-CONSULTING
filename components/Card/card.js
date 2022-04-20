@@ -1,19 +1,12 @@
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Box,
-  Typography,
-} from '../MuiComponents/mui-components';
-
-import { Image } from '../NextComponents/next-components';
-
-import {
-  motion,
-  useEffect,
-  useInView,
-  useAnimation,
-} from '../ThirdPartyLibrariesComponents/third-party';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Image from 'next/image';
+import { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;

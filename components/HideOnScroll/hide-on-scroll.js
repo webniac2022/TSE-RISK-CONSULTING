@@ -1,4 +1,5 @@
-import { Slide, useScrollTrigger } from '../MuiComponents/mui-components';
+import Slide from '@mui/material/Slide';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const HideOnScroll = ({ children }) => {
   const trigger = useScrollTrigger();

@@ -1,9 +1,7 @@
 import createEmotionCache from '../lib/create-emotion-cache';
-import {
-  Head,
-  CacheProvider,
-} from '../components/NextComponents/next-components';
-import { CssBaseline } from '../components/MuiComponents/mui-components';
+import Head from 'next/head';
+import { CacheProvider } from '@emotion/react';
+import { CssBaseline } from '@mui/material';
 import Header from '../components/Header/header';
 import Footer from '../components/Footer/footer';
 import { AppWrapper } from '../context/context';

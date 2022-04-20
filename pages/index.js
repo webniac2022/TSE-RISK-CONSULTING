@@ -1,20 +1,16 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CookieModal from '../components/CookieModal/cookie-modal';
-import {
-  StyledSpan,
-  useMediaQuery,
-  Typography,
-  Grid,
-  useTheme,
-} from '../components/MuiComponents/mui-components';
-import { Image, Head } from '../components/NextComponents/next-components';
-import {
-  contentful,
-  motion,
-} from '../components/ThirdPartyLibrariesComponents/third-party';
-
+import { StyledSpan } from '../components/StyledComponents/styled-components';
+import Image from 'next/image';
+import Head from 'next/head';
+import { motion } from 'framer-motion';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import MyCard from '../components/Card/card';
 import CounterAnimation from '../components/CounterAnimation/counter-animation';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import * as contentful from 'contentful';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;

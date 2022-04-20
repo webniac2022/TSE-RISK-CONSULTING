@@ -1,12 +1,10 @@
-import {
-  useInView,
-  useCountUp,
-  motion,
-  useRef,
-  useEffect,
-} from '../ThirdPartyLibrariesComponents/third-party';
-import { Image } from '../NextComponents/next-components';
-import { Grid, styled } from '../MuiComponents/mui-components';
+import { useEffect, useRef } from 'react';
+import { useCountUp } from 'react-countup';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
 import documents from '../../public/images/documents.svg';
 import time from '../../public/images/time.svg';
 

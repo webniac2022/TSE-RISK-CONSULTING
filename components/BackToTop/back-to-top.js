@@ -1,4 +1,6 @@
-import { Zoom, Box, useScrollTrigger } from '../MuiComponents/mui-components';
+import Zoom from '@mui/material/Zoom';
+import Box from '@mui/material/Box';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const BackToTop = ({ children }) => {
   const trigger = useScrollTrigger();

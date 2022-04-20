@@ -1,8 +1,8 @@
 import {
   StyledButton,
-  Typography,
   StyledSpan,
-} from '../MuiComponents/mui-components';
+} from '../StyledComponents/styled-components';
+import Typography from '@mui/material/Typography';
 import Link from '../Link/link';
 
 function Author() {

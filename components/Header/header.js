@@ -1,14 +1,12 @@
-import {
-  AppBar,
-  Toolbar,
-  styled,
-  IconButton,
-  Fab,
-  Box,
-  Grid,
-} from '../MuiComponents/mui-components';
-import { Image } from '../NextComponents/next-components';
-import { Fragment } from '../ThirdPartyLibrariesComponents/third-party';
+import AppBar from '@mui/material/AppBar';
+import { styled } from '@mui/material/styles';
+import Toolbar from '@mui/material/Toolbar';
+import Fab from '@mui/material/Fab';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
+import Image from 'next/image';
+import { Fragment } from 'react';
 import { useAppContext } from '../../context/context';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';

@@ -1,4 +1,4 @@
-import { motion } from '../ThirdPartyLibrariesComponents/third-party';
+import { motion } from 'framer-motion';
 
 function Underline(props) {
   return (

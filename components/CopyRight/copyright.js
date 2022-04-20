@@ -1,5 +1,5 @@
-import { Grid, Typography } from '../MuiComponents/mui-components';
-
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 function CopyRight() {
   return (
     <Grid

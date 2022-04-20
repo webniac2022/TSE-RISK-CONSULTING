@@ -1,13 +1,12 @@
-import {
-  StyledSpan,
-  useTheme,
-  Grid,
-  Typography,
-  useMediaQuery,
-} from '../components/MuiComponents/mui-components';
-import { Image, Head } from '../components/NextComponents/next-components';
-import { contentful } from '../components/ThirdPartyLibrariesComponents/third-party';
+import { StyledSpan } from '../components/StyledComponents/styled-components';
+import Image from 'next/image';
+import Head from 'next/head';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import * as contentful from 'contentful';
 import MyCard from '../components/Card/card';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;

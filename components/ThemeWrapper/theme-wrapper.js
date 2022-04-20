@@ -1,11 +1,10 @@
 import {
   ThemeProvider,
   createTheme,
-  red,
-  green,
   responsiveFontSizes,
-} from '../MuiComponents/mui-components';
-import { useMemo } from '../ThirdPartyLibrariesComponents/third-party';
+} from '@mui/material/styles';
+import { green, red } from '@mui/material/colors';
+import { useMemo } from 'react';
 import { useAppContext } from '../../context/context';
 
 const ThemeWrapper = ({ children }) => {

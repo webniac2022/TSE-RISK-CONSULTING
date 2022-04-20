@@ -1,10 +1,10 @@
 import {
   StyledButton,
-  Grid,
-  Typography,
   StyledSpan,
-} from '../components/MuiComponents/mui-components';
-import { Image } from '../components/NextComponents/next-components';
+} from '../components/StyledComponents/styled-components';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Image from 'next/image';
 import Link from '../components/Link/link';
 import err from '../public/images/404.svg';
 

@@ -38,6 +38,8 @@ function HomePage({ homepage: { items } }) {
   const security = images[3].fields.file.url;
   const vault = images[4].fields.file.url;
 
+  const metaPicUrl = `https://${images[5].fields.file.url}`;
+
   return (
     <main>
       <Head>
@@ -93,6 +95,34 @@ function HomePage({ homepage: { items } }) {
         <meta name="description" content="Contact TSE RISK CONSULTING" />
         <meta name="description" content="Contact analize de risc" />
         <meta name="description" content="Analiza de risc Cluj" />
+        <meta property="og:locale" content="ro_RO" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="TSE RISK CONSULTING - Analize de risc la securitatea fizica prin experti abilitati inscrisi in R.N.E.R.S.F"
+        />
+        <meta
+          property="og:description"
+          content="TSE RISK CONSULTING - Ce este analiza de risc? Realizam analize de risc la securitatea fizica prin experti abilitati"
+        />
+        <meta property="og:url" content="https://tseriskconsulting.ro" />
+        <meta
+          property="og:site_name"
+          content="TSE RISK CONSULTING - Evaluari de risc la securitatea fizica Cluj, Romania"
+        />
+        <meta property="og:image" content={`${metaPicUrl}`} />
+        <meta property="og:image:width" content="650" />
+        <meta property="og:image:height" content="488" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:description"
+          content="Analize de risc la securitatea fizica prin experti abilitati inscrisi in RNERSF"
+        />
+        <meta
+          name="twitter:title"
+          content="Analize de risc la securitatea fizica prin experti abilitati inscrisi in RNERSF"
+        />
+        <meta name="twitter:image" content={`${metaPicUrl}`} />
       </Head>
       <Grid container mb={10}>
         <Grid item container direction="column" spacing={4}>

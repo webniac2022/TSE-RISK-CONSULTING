@@ -54,7 +54,7 @@ function ConfidentialitatePage({ confidentialitate: { items } }) {
             <StyledSpan>.</StyledSpan>
           </Typography>
         </Grid>
-        <Grid item container mt={-25}>
+        <Grid item container mt={-20}>
           <Image
             src={hero}
             alt="hero"

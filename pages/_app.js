@@ -22,7 +22,9 @@ function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>
-          TSE RISK CONSULTING - Analize de risc la securitatea fizica
+          TSE RISK CONSULTING - Analize de risc la securitatea fizica Romania,
+          Cluj - prin experti abilitati si inscrisi in R.N.E.R.S.F. Alege sa iti
+          faci analiza de risc la securitatea fizica cu un expert. Evita amenda
         </title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta name="description" content="Evaluari de risc Romania" />

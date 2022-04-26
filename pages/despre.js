@@ -29,6 +29,14 @@ function DespreNoiPage({ despre: { items } }) {
         <title>Despre TSE RISK CONSULTING</title>
         <meta
           name="description"
+          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica, legea 333/2003, hg 301/2012 si hg 1002/2015"
+        />
+        <meta
+          name="description"
+          content="Evita amenda pentru analiza de risc la securitatea fizica"
+        />
+        <meta
+          name="description"
           content="Informatii despre TSE RISK CONSULTING"
         />
         <meta name="description" content="TSE RISK CONSULTING - Despre" />
@@ -36,6 +44,54 @@ function DespreNoiPage({ despre: { items } }) {
           name="description"
           content="Despre analize de risc la securitatea fizica Cluj"
         />
+        <meta
+          name="description"
+          content="Analize de risc la securitatea fizica Cluj"
+        />
+        <meta
+          name="description"
+          content="Analize de risc la securitatea fizica prin experti abilitati inscrisi in Registrul National al Evaluatorilor de risc la securitatea fizica"
+        />
+        <meta
+          name="description"
+          content="Legea 333/2003 - realizarea analizei de risc la securitate"
+        />
+
+        <meta name="description" content="Ai nevoie de analiza de risc ?" />
+        <meta name="description" content="Ce este analiza de risc?" />
+        <meta name="description" content="Cat costa analiza de risc?" />
+        <meta name="description" content="Analize de risc Cluj" />
+        <meta name="description" content="Analize de risc Romania" />
+        <meta name="description" content="Evaluator de risc" />
+        <meta name="description" content="Evaluatori de risc Romania" />
+        <meta name="description" content="Raport risc Cluj" />
+        <meta name="description" content="Raport risc Romania" />
+        <meta name="description" content="Securitate Cluj" />
+        <meta
+          name="description"
+          content="Analiza de risc reprezinta fundamentul adoptarii masurilor de securitate. Orice instalare a unui sistem antiefractie sau supraveghere video trebuie sa fie realizata in baza unei analize de risc."
+        />
+        <meta name="description" content="securitate romania" />
+        <meta name="description" content="consultanta securitate cluj" />
+        <meta name="description" content="RNERS romania" />
+        <meta name="description" content="Ce este analiza de risc?" />
+        <meta name="description" content="Contact analize de risc Cluj" />
+        <meta name="description" content="Ai nevoie de o analiza de risc?" />
+        <meta
+          name="description"
+          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica"
+        />
+        <meta name="description" content="Evaluare de risc la securitate" />
+        <meta name="description" content="legea 333/2003" />
+        <meta name="description" content="hg 301/2012" />
+        <meta name="description" content="evaluare de risc la preturi mici" />
+        <meta
+          name="description"
+          content="Pagina de contact a TSE RISK CONSULTING"
+        />
+        <meta name="description" content="Contact TSE RISK CONSULTING" />
+        <meta name="description" content="Contact analize de risc" />
+        <meta name="description" content="Analiza de risc Cluj" />
       </Head>
       <Grid container mb={10}>
         <Grid item container justifyContent="center" mt={-25}>
@@ -51,7 +107,7 @@ function DespreNoiPage({ despre: { items } }) {
         <Grid item container mt={-25}>
           <Image
             src={hello}
-            alt="hello"
+            alt="evaluator de risc la securitatea fizica"
             layout="fixed"
             width={350}
             height={350}
@@ -89,7 +145,7 @@ function DespreNoiPage({ despre: { items } }) {
         >
           <MyCard
             imgSrc={legal}
-            alt="legal"
+            alt="analiza de risc la securitatea fizica"
             content={[secondParagraph]}
             cardWidth={matchesSM ? 300 : 450}
             cardHeight={matchesSM ? 430 : 400}

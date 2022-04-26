@@ -51,8 +51,13 @@ function HomePage({ homepage: { items } }) {
         />
         <meta
           name="description"
+          content="Analize de risc la securitatea fizica prin experti abilitati inscrisi in Registrul National al Evaluatorilor de risc la securitatea fizica"
+        />
+        <meta
+          name="description"
           content="Legea 333/2003 - realizarea analizei de risc la securitate"
         />
+
         <meta name="description" content="Ai nevoie de analiza de risc ?" />
         <meta name="description" content="Ce este analiza de risc?" />
         <meta name="description" content="Cat costa analiza de risc?" />
@@ -63,6 +68,31 @@ function HomePage({ homepage: { items } }) {
         <meta name="description" content="Raport risc Cluj" />
         <meta name="description" content="Raport risc Romania" />
         <meta name="description" content="Securitate Cluj" />
+        <meta
+          name="description"
+          content="Analiza de risc reprezinta fundamentul adoptarii masurilor de securitate. Orice instalare a unui sistem antiefractie sau supraveghere video trebuie sa fie realizata in baza unei analize de risc."
+        />
+        <meta name="description" content="securitate romania" />
+        <meta name="description" content="consultanta securitate cluj" />
+        <meta name="description" content="RNERS romania" />
+        <meta name="description" content="Ce este analiza de risc?" />
+        <meta name="description" content="Contact analize de risc Cluj" />
+        <meta name="description" content="Ai nevoie de o analiza de risc?" />
+        <meta
+          name="description"
+          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica"
+        />
+        <meta name="description" content="Evaluare de risc la securitate" />
+        <meta name="description" content="legea 333/2003" />
+        <meta name="description" content="hg 301/2012" />
+        <meta name="description" content="evaluare de risc la preturi mici" />
+        <meta
+          name="description"
+          content="Pagina de contact a TSE RISK CONSULTING"
+        />
+        <meta name="description" content="Contact TSE RISK CONSULTING" />
+        <meta name="description" content="Contact analize de risc" />
+        <meta name="description" content="Analiza de risc Cluj" />
       </Head>
       <Grid container mb={10}>
         <Grid item container direction="column" spacing={4}>
@@ -74,25 +104,59 @@ function HomePage({ homepage: { items } }) {
               </Typography>
             </Grid>
 
-            <Grid item container direction="row">
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            >
               <Grid
                 item
                 container
                 alignItems="center"
-                sx={{ mt: { sm: -60, xs: -25, md: -55, lg: -50 } }}
+                direction="column"
+                justifyContent="center"
+                sx={{
+                  mt: { sm: -60, xs: -25, md: -55, lg: -50 },
+                  display: 'block',
+                }}
                 xs={12}
-                sm={3}
+                sm={4}
               >
                 <Image
                   src={hero}
-                  alt="man working on the computer"
+                  alt="Evaluator de risc la securitatea fizica, analiza de risc la securitatea fizica Cluj Romania"
                   width={300}
                   height={300}
+                  layout="responsive"
                   loader={myLoader}
                   priority
                 />
               </Grid>
-              <Grid item container xs={12} sm={9}>
+              <Grid item container xs={10} sm={8} p={2} mb={2} gap={2}>
+                <Grid
+                  item
+                  container
+                  justifyContent="center"
+                  alignItems="center"
+                  mb={2}
+                  sx={{
+                    borderRadius: 2,
+                    boxShadow: '1px 1px 1px 1px  #9DDDFF',
+                  }}
+                >
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    p={5}
+                    fontWeight="bold"
+                  >
+                    Efectuam analize de risc la securitatea fizica prin experti
+                    abilitati si inscrisi in R.N.E.R.S.F(Registrul National al
+                    evaluatorilor de risc la securitatea fizica)
+                  </Typography>
+                </Grid>
                 <CounterAnimation />
               </Grid>
             </Grid>

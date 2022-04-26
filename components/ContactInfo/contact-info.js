@@ -66,7 +66,7 @@ const ContactInfo = ({ isDisplayed }) => {
             startIcon={<FacebookIcon sx={{ fill: '#3b5998' }} />}
             size="medium"
             component={Link}
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/TSE-Risk-Consulting-104100931475614/"
             target="_blank"
             rel="noopener"
             aria-label="/TSERISKCONSULTING"

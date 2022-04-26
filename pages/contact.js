@@ -39,9 +39,25 @@ function ContactPage({ contact: { items } }) {
   return (
     <>
       <Head>
-        <title>
-          Contactati-ne pentru o evaluare de risc la securitatea fizica
-        </title>
+        <title>Analiza de risc</title>
+        <meta
+          name="description"
+          content="Analiza de risc reprezinta fundamentul adoptarii masurilor de securitate. Orice instalare a unui sistem antiefractie sau supraveghere video trebuie sa fie realizata in baza unei analize de risc."
+        />
+        <meta name="description" content="securitate romania" />
+        <meta name="description" content="consultanta securitate cluj" />
+        <meta name="description" content="RNERS romania" />
+        <meta name="description" content="Ce este analiza de risc?" />
+        <meta name="description" content="Contact analize de risc Cluj" />
+        <meta name="description" content="Ai nevoie de o analiza de risc?" />
+        <meta
+          name="description"
+          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica"
+        />
+        <meta name="description" content="Evaluare de risc la securitate" />
+        <meta name="description" content="legea 333/2003" />
+        <meta name="description" content="hg 301/2012" />
+        <meta name="description" content="evaluare de risc la preturi mici" />
         <meta
           name="description"
           content="Pagina de contact a TSE RISK CONSULTING"

@@ -91,7 +91,14 @@ const Header = () => {
 
       <Offset id="back-to-top-anchor" />
       <BackToTop>
-        <Fab color="#FFA500" size="large" aria-label="back to top">
+        <Fab
+          size="large"
+          aria-label="back to top"
+          sx={{
+            background: '#9DDDFF',
+            '&:hover': { background: '#9DDDFF', opacity: 0.8 },
+          }}
+        >
           <KeyboardArrowUp />
         </Fab>
       </BackToTop>

@@ -27,7 +27,10 @@ function ServiciiPage({ servicii: { items } }) {
   return (
     <>
       <Head>
-        <title>Servicii analiza de risc TSE RISK CONSULTING</title>
+        <title>
+          Analize de risc la securitatea fizica Cluj, Romania, evita amenda,
+          evaluatori de risc profesionisti acreditati inscrisi in RNERS
+        </title>
         <meta name="description" content="Servicii TSE RISK CONSULTING" />
         <meta
           name="description"
@@ -41,6 +44,70 @@ function ServiciiPage({ servicii: { items } }) {
         <meta name="description" content="Evaluatori profesionisti Romania" />
         <meta name="description" content="Legea 333/2003 evaluare de risc" />
         <meta name="description" content="H.G.1002/2015" />
+        <meta
+          name="description"
+          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica, legea 333/2003, hg 301/2012 si hg 1002/2015"
+        />
+        <meta
+          name="description"
+          content="Evita amenda pentru analiza de risc la securitatea fizica"
+        />
+        <meta
+          name="description"
+          content="Informatii despre TSE RISK CONSULTING"
+        />
+        <meta
+          name="description"
+          content="Despre analize de risc la securitatea fizica Cluj"
+        />
+        <meta
+          name="description"
+          content="Analize de risc la securitatea fizica Cluj"
+        />
+        <meta
+          name="description"
+          content="Analize de risc la securitatea fizica prin experti abilitati inscrisi in Registrul National al Evaluatorilor de risc la securitatea fizica"
+        />
+        <meta
+          name="description"
+          content="Legea 333/2003 - realizarea analizei de risc la securitate"
+        />
+
+        <meta name="description" content="Ai nevoie de analiza de risc ?" />
+        <meta name="description" content="Ce este analiza de risc?" />
+        <meta name="description" content="Cat costa analiza de risc?" />
+        <meta name="description" content="Analize de risc Cluj" />
+        <meta name="description" content="Analize de risc Romania" />
+        <meta name="description" content="Evaluator de risc" />
+        <meta name="description" content="Evaluatori de risc Romania" />
+        <meta name="description" content="Raport risc Cluj" />
+        <meta name="description" content="Raport risc Romania" />
+        <meta name="description" content="Securitate Cluj" />
+        <meta
+          name="description"
+          content="Analiza de risc reprezinta fundamentul adoptarii masurilor de securitate. Orice instalare a unui sistem antiefractie sau supraveghere video trebuie sa fie realizata in baza unei analize de risc."
+        />
+        <meta name="description" content="securitate romania" />
+        <meta name="description" content="consultanta securitate cluj" />
+        <meta name="description" content="RNERS romania" />
+        <meta name="description" content="Ce este analiza de risc?" />
+        <meta name="description" content="Contact analize de risc Cluj" />
+        <meta name="description" content="Ai nevoie de o analiza de risc?" />
+        <meta
+          name="description"
+          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica"
+        />
+        <meta name="description" content="Evaluare de risc la securitate" />
+        <meta name="description" content="legea 333/2003" />
+        <meta name="description" content="hg 301/2012" />
+        <meta name="description" content="evaluare de risc la preturi mici" />
+        <meta
+          name="description"
+          content="Pagina de contact a TSE RISK CONSULTING"
+        />
+        <meta name="description" content="Contact TSE RISK CONSULTING" />
+        <meta name="description" content="Contact analize de risc" />
+        <meta name="description" content="Analiza de risc Cluj" />
       </Head>
 
       <Grid container mb={10}>
@@ -60,7 +127,7 @@ function ServiciiPage({ servicii: { items } }) {
             <Grid item container xs={12} lg={6} justifyContent="center">
               <MyCard
                 imgSrc={consultancy}
-                alt="consultancy service"
+                alt="evaluator de risc la securitatea fizica, consultant"
                 content={[firstService]}
                 cardWidth={matchesSM ? 300 : 450}
                 cardHeight={matchesSM ? 450 : 400}
@@ -69,7 +136,7 @@ function ServiciiPage({ servicii: { items } }) {
             <Grid item container xs={12} lg={6} justifyContent="center">
               <MyCard
                 imgSrc={contract}
-                alt="evaluation contract"
+                alt="Semnarea contractului de evaluare de risc la securitatea fizica"
                 content={[secondService]}
                 cardWidth={matchesSM ? 300 : 450}
                 cardHeight={matchesSM ? 500 : 400}
@@ -82,7 +149,7 @@ function ServiciiPage({ servicii: { items } }) {
               <Grid item container xs={12} lg={6} justifyContent="center">
                 <MyCard
                   imgSrc={evaluation}
-                  alt="evaluation process"
+                  alt="Procesul evaluarii riscurilor la securitatea fizica"
                   content={[thirdService]}
                   cardWidth={matchesSM ? 300 : 450}
                   cardHeight={matchesSM ? 450 : 400}
@@ -98,7 +165,7 @@ function ServiciiPage({ servicii: { items } }) {
               >
                 <MyCard
                   imgSrc={completedTasks}
-                  alt="implementing recomandations"
+                  alt="Implementarea masurilor de risc la securitatea fizica"
                   content={[fourthService]}
                   cardWidth={matchesSM ? 300 : 450}
                   cardHeight={matchesSM ? 450 : 400}

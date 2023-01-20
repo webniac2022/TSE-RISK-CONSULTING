@@ -29,6 +29,8 @@ function ContactPage({ contact: { items } }) {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
   const [showAlert, setShowAlert] = useState(false);
 
+  console.log('state: ', state);
+
   useEffect(() => {
     if (showAlert) {
       const timer = setTimeout(() => {
@@ -38,9 +40,11 @@ function ContactPage({ contact: { items } }) {
     }
   }, [showAlert]);
 
-  if (state.succeeded) {
-    setShowAlert(true);
-  }
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowAlert(true);
+    }
+  }, [state.succeeded]);
 
   return (
     <>

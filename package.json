@@ -17,6 +17,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.6.0",
+    "@formspree/react": "^2.4.1",
     "@mui/icons-material": "^5.2.4",
     "@mui/material": "^5.2.4",
     "@next/bundle-analyzer": "^12.1.5",

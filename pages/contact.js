@@ -15,7 +15,9 @@ import FormControl from '@mui/material/FormControl';
 import Box from '@mui/material/Box';
 import ContactThanksAnimation from '../components/ContactThanks/contact-thanks';
 import ContactInfo from '../components/ContactInfo/contact-info';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useForm } from '@formspree/react';
+import AlertComponent from '../components/AlertComponent/AlertComponent';
 
 const myLoader = ({ src }) => {
   return `https:${src}`;
@@ -24,40 +26,29 @@ const myLoader = ({ src }) => {
 function ContactPage({ contact: { items } }) {
   const { title, images } = items[0].fields;
   const hero = images[0].fields.file.url;
-  const [formData, setFormData] = useState({
-    nume: '',
-    email: '',
-    message: '',
-    showAlert: false,
-  });
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
+  const [showAlert, setShowAlert] = useState(false);
 
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  useEffect(() => {
+    if (showAlert) {
+      const timer = setTimeout(() => {
+        setShowAlert(false);
+      }, 2500);
+      return () => clearTimeout(timer);
+    }
+  }, [showAlert]);
+
+  if (state.succeeded) {
+    setShowAlert(true);
   }
 
   return (
     <>
+      {showAlert && <AlertComponent status={state.succeeded} />}
       <Head>
-        <title>Analiza de risc</title>
-        <meta
-          name="description"
-          content="Analiza de risc reprezinta fundamentul adoptarii masurilor de securitate. Orice instalare a unui sistem antiefractie sau supraveghere video trebuie sa fie realizata in baza unei analize de risc."
-        />
-        <meta name="description" content="securitate romania" />
-        <meta name="description" content="consultanta securitate cluj" />
-        <meta name="description" content="RNERS romania" />
-        <meta name="description" content="Ce este analiza de risc?" />
-        <meta name="description" content="Contact analize de risc Cluj" />
-        <meta name="description" content="Ai nevoie de o analiza de risc?" />
-        <meta
-          name="description"
-          content="Tot ce trebuie sa stii despre analiza de risc la securitatea fizica"
-        />
-        <meta name="description" content="Evaluare de risc la securitate" />
-        <meta name="description" content="legea 333/2003" />
-        <meta name="description" content="hg 301/2012" />
-        <meta name="description" content="evaluare de risc la preturi mici" />
+        <title>
+          Contactati-ne pentru o evaluare de risc la securitatea fizica
+        </title>
         <meta
           name="description"
           content="Pagina de contact a TSE RISK CONSULTING"
@@ -142,24 +133,14 @@ function ContactPage({ contact: { items } }) {
                 sx={{
                   width: '70%',
                 }}
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                action="/success"
+                onSubmit={handleSubmit}
               >
-                <Input type="hidden" name="form-name" value="contact" />
-                <InputLabel className={classes.hiddenField}>
-                  Robot, please fill this form so I can mark you as spam!
-                  <Input name="bot-field" />
-                </InputLabel>
                 <FormControl fullWidth margin="dense">
                   <InputLabel htmlFor="nume">Nume</InputLabel>
                   <Input
                     type="text"
                     name="nume"
                     id="nume"
-                    value={formData.nume}
-                    onChange={handleChange}
                     required
                     autoComplete="false"
                   />
@@ -169,8 +150,6 @@ function ContactPage({ contact: { items } }) {
                   <Input
                     type="email"
                     name="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     id="email"
                     required
                     autoComplete="false"
@@ -182,8 +161,6 @@ function ContactPage({ contact: { items } }) {
                     type="textarea"
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     multiline
                     rows={5}

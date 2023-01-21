@@ -48,7 +48,6 @@ function ContactPage({ contact: { items } }) {
 
   return (
     <>
-      {showAlert && <AlertComponent status={state.succeeded} />}
       <Head>
         <title>
           Contactati-ne pentru o evaluare de risc la securitatea fizica
@@ -139,6 +138,7 @@ function ContactPage({ contact: { items } }) {
                 }}
                 onSubmit={handleSubmit}
               >
+                {showAlert && <AlertComponent status={state.succeeded} />}
                 <FormControl fullWidth margin="dense">
                   <InputLabel htmlFor="nume">Nume</InputLabel>
                   <Input
